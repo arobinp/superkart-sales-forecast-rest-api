@@ -277,5 +277,5 @@ def sales_forecast_batch():
     })
 
 # Run the Flask application in debug mode if this script is executed directly
-#if __name__ == '__main__':
-    #sales_forecast_predictor_api.run(debug=True)
+if __name__ == '__main__':
+    sales_forecast_predictor_api.run(debug=True)
