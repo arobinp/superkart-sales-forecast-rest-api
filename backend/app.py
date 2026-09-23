@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify  # For creating the Flask API
 sales_forecast_predictor_api = Flask("Sales Forcast Predictor")
 
 # Load the trained machine learning model
-model = joblib.load("/content/drive/MyDrive/GreatLearning/ModelDeployment/backend_files/sales_forecast_prediction_model_v2_0.joblib")
+model = joblib.load("sales_forecast_prediction_model_v2_0.joblib")
 
 # Define a route for the home page (GET request)
 @sales_forecast_predictor_api.get('/')
